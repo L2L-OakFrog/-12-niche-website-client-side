@@ -140,4 +140,16 @@ node_modules
 .env
 ```
 
+3. Create `.env` file ✔ <br />
+```
+DB_USER=
+DB_PASS=
+```
+`then`
+```
+process.env.DB_USER
+process.env.DB_PASS
+```
+
+
 }
