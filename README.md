@@ -30,6 +30,20 @@ Click Here: [Live Site (Netlify)]()
 
 ### GitHub (Server): https://github.com/programming-hero-web-course-4/niche-website-server-side-L2L-OakFrog
 
+## Objectives
+
+1. `Single product` Website / `Niche website`;
+
+2. Home page with a `(header / simple navbar), banner, products, reviews, and footer`;
+
+3. Home page products will have a `maximum of 6 items/products` with relevant details;
+
+4. Products will have `buy now button` which will take the user to the `purchase page`;
+
+5. Add `one extra section` in the `home page` in addition to the 5 sections mentioned above;
+
+6. 
+
 ---
 
 ## My Setup:
