@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# Foundation Center
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This site is made for your foundation buying guide.
 
-## Available Scripts
+## `Services:`
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<ul>
+<li>You can choose from various foundations available in our website;</li>
+<li>Check every details of your chosen foundation & check out;</li>
+<li>Preview our customers feedbacks;</li>
+<li>Browse a whole collection of foundation brands;</li>
+<li>Create an account in our website to get future services and discounts if available.</li>
+</ul>
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Click Here: [Live Site]( "Firebase")
+<br />
+Click Here: [Live Site (Netlify)]()
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## My Live Links:
 
-### Code Splitting
+### Live Site (Firebase): 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Live Site (Netlify): 
 
-### Analyzing the Bundle Size
+### Heroku (Server): 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### GitHub (Client): https://github.com/programming-hero-web-course-4/niche-website-client-side-L2L-OakFrog
 
-### Making a Progressive Web App
+### GitHub (Server): https://github.com/programming-hero-web-course-4/niche-website-server-side-L2L-OakFrog
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## My Setup:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Frontend:
+{
 
-### Deployment
+#### 1. Install React Router, ✔
+`version-5 link:` (https://v5.reactrouter.com/),<br /> 
+```
+$ npm install react-router-dom@5
+```
+`latest version link:` (https://reactrouter.com/), <br /> 
+```
+$ npm install history@5 react-router-dom@6
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### 2. Install Firebase, ✔
+`Website link:` (https://console.firebase.google.com/),<br />
+`onetime global install` 
+```
+$ npm install -g firebase-tools
+```
+`then`
+```
+$ npm install firebase
+```
+`login & initialize`
+```
+(firebase login), (firebase init), & (firebase deploy)
+```
+`Note! if terminal gives error copy:` 
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass 
+```
 
-### `npm run build` fails to minify
+#### 3. Install React Material UI, ✔
+`latest version link:` (https://mui.com/getting-started/installation/),<br /> 
+```
+$ npm install @mui/material
+```
+`or`
+```
+$ npm install @mui/material @emotion/react @emotion/styled
+```
+`prebuilt icons:` 
+```
+$ npm install @mui/icons-material
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 4. Install Axios JS, ✔
+`Website link:` (https://axios-http.com/docs/intro),<br />
+```
+$ npm install axios
+```
+
+}
+
+### Backend:
+{
+
+#### 1. Install `Express`, ✔
+`Website link:` (https://expressjs.com/),<br />
+```
+const express = require('express');
+const app = express();
+```
+
+#### 2. Install `MongoDB`, ✔
+`Website link:` (https://www.mongodb.com/),<br />
+```
+const { MongoClient } = require('mongodb');
+```
+
+#### 3. Install `Cors`, ✔
+`Website link:` (https://www.npmjs.com/package/cors),<br />
+`place middleware`
+```
+const cors = require('cors');
+app.use(cors());
+app.use(express.json());
+```
+
+#### 4. Install `DotEnv`, ✔
+`Website link:` (https://www.npmjs.com/package/dotenv),<br />
+```
+require('dotenv').config();
+```
+
+#### 5. Deploy in `Heroku`, ✔
+```
+$ heroku create
+```
+`then after every modification`
+```
+$ git push heroku main
+```
+
+### Extra:
+1. Require `ObjectId` from MongoDB ✔
+```
+const ObjectId = require('mongodb').ObjectId;
+```
+
+2. Create `.gitignore` file ✔ <br />
+```
+node_modules
+.env
+```
+
+}
