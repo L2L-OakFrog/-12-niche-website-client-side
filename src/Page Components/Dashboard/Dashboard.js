@@ -33,6 +33,7 @@ import AddProducts from '../Admin/AddProducts/AddProducts';
 import ManageProducts from '../Admin/ManageProducts/ManageProducts';
 import Review from './Reeview/Review';
 import Payment from './Payment/Payment';
+import Purchase from './Purchase/Purchase';
 
 const drawerWidth = 240;
 
@@ -55,6 +56,7 @@ const Dashboard = (props) => {
             <Link to='/explore'><Button sx={{ width: '75%', m: 1 }} variant='contained'>Back to Explore</Button></Link>
             <Link to={`${url}`}><Button sx={{ width: '75%', m: 1 }} variant='contained'>My orders</Button></Link>
             <Link to={`${url}/review`}><Button sx={{ width: '75%', m: 1 }} variant='contained'>Review</Button></Link>
+            {/* <Link to={`${url}/purchase`}><Button sx={{ width: '75%', m: 1 }} variant='contained'>Purchase</Button></Link> */}
             <Link to={`${url}/payment`}><Button sx={{ width: '75%', m: 1 }} variant='contained'>Payment Method</Button></Link>
             {admin &&
                 <Box>
@@ -165,7 +167,10 @@ const Dashboard = (props) => {
                         <UserCart></UserCart>
                     </Route>
                     <Route path={`${path}/review`}>
-                        <Review></Review>
+                        <Review />
+                    </Route>
+                    <Route path={`${path}/purchase/:pId`}>
+                        <Purchase />
                     </Route>
                     <Route path={`${path}/payment`}>
                         <Payment></Payment>

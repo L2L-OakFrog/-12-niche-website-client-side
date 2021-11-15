@@ -14,11 +14,11 @@ const ManageProducts = () => {
 
     const [allOrders, setAllOrders] = useState([]);
     /* useEffect(() => {
-        fetch(`http://localhost:5000/orders?email=${user.email}`)
+        fetch(`https://serene-caverns-27431.herokuapp.com/orders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setCart(data))
     }, []) */
-    axios.get(`http://localhost:5000/order`)
+    axios.get(`https://serene-caverns-27431.herokuapp.com/order`)
         .then(res => {
             const data = res.data;
             setAllOrders(data);
@@ -27,7 +27,7 @@ const ManageProducts = () => {
 
         const sure = window.confirm('Are you Sure?');
         if (sure) {
-            axios.delete(`http://localhost:5000/order/${data}`)
+            axios.delete(`https://serene-caverns-27431.herokuapp.com/order/${data}`)
                 .then(res => {
                     const data = res.data;
                     if (data.deletedCount > 0) {

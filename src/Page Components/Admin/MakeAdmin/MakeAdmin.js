@@ -13,7 +13,7 @@ const MakeAdmin = () => {
 
     const handleMakeAdmin = e => {
         const role = { email };
-        axios.put('http://localhost:5000/user/admin', role, {
+        axios.put('https://serene-caverns-27431.herokuapp.com/user/admin', role, {
             headers: {
                 'Authorization': `Bearer ${token}`
             },

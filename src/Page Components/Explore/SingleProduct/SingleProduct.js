@@ -3,6 +3,7 @@ import { Card, Col } from 'react-bootstrap';
 import Rating from 'react-rating';
 import { Button } from '@mui/material';
 import DetailsModal from '../DetailsModal/DetailsModal';
+import './SingleProduct.css';
 
 const SingleProduct = ({ product }) => {
     const { name, img, details, rating } = product;
@@ -12,8 +13,8 @@ const SingleProduct = ({ product }) => {
     const handleCloseDetails = () => setOpenModal(false)
     return (
         <>
-            <Col xs={12} md={6} lg={4} className='mb-2'>
-                <Card className='card'>
+            <Col xs={12} md={6} lg={4} className='mb-3'>
+                <Card className='explore'>
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>

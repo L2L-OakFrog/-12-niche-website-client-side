@@ -51,7 +51,7 @@ const useFirebase = () => {
                     displayName: name,
                     photoURL: img
                 }).then(() => {
-                    axios.post('http://localhost:5000/user', newUser)
+                    axios.post('https://serene-caverns-27431.herokuapp.com/user', newUser)
                         .then(res => { })
                 }).catch((error) => {
                 });
@@ -111,7 +111,7 @@ const useFirebase = () => {
 
     // admin
     useEffect(() => {
-        fetch(`http://localhost:5000/user/${user?.email}`)
+        fetch(`https://serene-caverns-27431.herokuapp.com/user/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user?.email])

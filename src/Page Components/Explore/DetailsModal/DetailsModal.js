@@ -21,6 +21,7 @@ const DetailsModal = ({ openModal, handleCloseDetails, product }) => {
     const { user } = useAuth();
     const userEmail = user?.email;
     const userName = user?.displayName;
+    const initialValues = {};
     const { _id, name, details, price, stock } = product;
     const handleAddCart = e => {
         const orders = {
@@ -29,7 +30,7 @@ const DetailsModal = ({ openModal, handleCloseDetails, product }) => {
             productName: name,
             price: price,
         }
-        axios.post('http://localhost:5000/orders', orders)
+        axios.post('https://serene-caverns-27431.herokuapp.com/orders', orders)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!');
@@ -65,7 +66,7 @@ const DetailsModal = ({ openModal, handleCloseDetails, product }) => {
                     {/* Buttons */}
                     <Button onClick={handleAddCart} sx={{ m: 1 }} variant="contained">Add to Cart</Button>
 
-                    <NavLink to={`/purchase/${_id}/`}><Button sx={{ m: 1 }} variant="contained">Buy Now</Button></NavLink>
+                    <NavLink to={`/dashboard/purchase/${_id}/`}><Button sx={{ m: 1 }} variant="contained">Buy Now</Button></NavLink>
                 </Box>
             </Modal>
         </div>

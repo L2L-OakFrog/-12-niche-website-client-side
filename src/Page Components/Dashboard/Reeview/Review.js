@@ -13,7 +13,7 @@ const Review = () => {
     });
 
     const onSubmitReviews = data => {
-        axios.post('http://localhost:5000/review', data)
+        axios.post('https://serene-caverns-27431.herokuapp.com/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!');

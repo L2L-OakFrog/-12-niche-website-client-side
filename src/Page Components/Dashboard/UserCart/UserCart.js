@@ -8,6 +8,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { NavLink } from 'react-router-dom';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
 
 const UserCart = () => {
     const { user, token } = useAuth();
@@ -15,7 +18,7 @@ const UserCart = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/orders?email=${user.email}`, {
+        axios.get(`https://serene-caverns-27431.herokuapp.com/orders?email=${user.email}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             },
@@ -30,7 +33,7 @@ const UserCart = () => {
 
         const sure = window.confirm('Are you Sure?');
         if (sure) {
-            axios.delete(`http://localhost:5000/orders/${data}`)
+            axios.delete(`https://serene-caverns-27431.herokuapp.com/orders/${data}`)
                 .then(res => {
                     const data = res.data;
                     console.log(data);
@@ -50,7 +53,7 @@ const UserCart = () => {
                         <TableCell>Product Name</TableCell>
                         <TableCell align="right">Price</TableCell>
                         <TableCell align="right">Shipping to</TableCell>
-                        <TableCell align="right">Status</TableCell>
+                        <TableCell align="right">Purchase</TableCell>
                         <TableCell align="right">Actions</TableCell>
                     </TableRow>
                 </TableHead>
@@ -64,8 +67,8 @@ const UserCart = () => {
                                 {row.productName}
                             </TableCell>
                             <TableCell align="right">${row.price}</TableCell>
-                            <TableCell align="right">{row.name}</TableCell>
-                            <TableCell align="right">{row.status ? `${row.status}` : 'pending'}</TableCell>
+                            <TableCell align="right">{row.location ? `${row.location}` : 'Pending'}</TableCell>
+                            <TableCell align="right">{row.status ? `${row.status}` : <Box><NavLink to={`/dashboard/payment`}><Button sx={{ m: 1 }} variant="contained">Buy Now</Button></NavLink></Box>}</TableCell>
                             <TableCell align="right"><button onClick={() => deleteHandle(row._id)} className='ms-2'>X</button></TableCell>
                         </TableRow>
                     ))}

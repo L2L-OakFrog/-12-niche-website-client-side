@@ -42,7 +42,7 @@ Click Here: [Live Site (Netlify)]()
 
 5. Add `one extra section` in the `home page` in addition to the 5 sections mentioned above; ✔
 
-6. Another page on the top navigation bar named `explore` where users will see all the products. At least 10 products with `(name, description, image, price and button)`;
+6. Another page on the top navigation bar named `explore` where users will see all the products. At least 10 products with `(name, description, image, price and button)`; ✔
 
 7. The `purchase` page is a private/protected route. Page should `display detailed information` of the `item`. Also `a form` should display the `user's name` and `email address` & users will `provide address, phone number and necessary information` to complete the purchase;
 
@@ -54,33 +54,33 @@ Click Here: [Live Site (Netlify)]()
 
 11. `My orders` page, the logged in user will see only his/her orders with `cancel/delete any order`. `Ask a confirmation message` before deleting or canceling an item;
 
-12. On the `Review` page, users should be able to add a review and that review will appear on the home age;
+12. On the `Review` page, users should be able to add a review and that review will appear on the home age; ✔
 
 13. Please `add one admin` with the email address: `admin@admin.com` with password: `123456`; ✔
 
-14. An admin will not see the options like a normal user. Instead will see `(Manage All Orders, Add A Product, Make Admin, Manage Products)`;
+14. An admin will not see the options like a normal user. Instead will see `(Manage All Orders, Add A Product, Make Admin, Manage Products)`; ✔
 
-15. An Admin `can make` another user `(an admin, add a product on the add a product page)`. After adding the product, this product will appear on the `explore` page;
+15. An Admin `can make` another user `(an admin, add a product on the add a product page)`. After adding the product, this product will appear on the `explore` page; ✔
 
-16. `Use a database` to store information. It could be `mongodb atlas` or any other `noSQL database`.
+16. `Use a database` to store information. It could be `mongodb atlas` or any other `noSQL database`. ✔
 
 ## Bonus:
 
-1. Adding review page should have a field to `add ratings`;
+1. Adding review page should have a field to `add ratings`; ✔
 
-2. Meaningful `README.md` file both on client side and server side with `(website name, a little description, link to your live site. And at least five bullet points mentioning different features and functionality)`;
+2. Meaningful `README.md` file both on client side and server side with `(website name, a little description, link to your live site. And at least five bullet points mentioning different features and functionality)`; ✔
 
-3. `Responsive website` for mobile & tablet;
+3. `Responsive website` for mobile & tablet; ✔
 
-4. Make the website `meaningful and consistent` in look and feel;
+4. Make the website `meaningful and consistent` in look and feel; ✔
 
-5. `Clean and organized` Code;
+5. `Clean and organized` Code; ✔
 
-6. Use `.env file` on the `server`, `.env.local file` on the `client` to hide db user and password, etc. Also use `.gitignore file`;
+6. Use `.env file` on the `server`, `.env.local file` on the `client` to hide db user and password, etc. Also use `.gitignore file`; ✔
 
-7. On the `Manage All Orders` page the admin will see the orders placed by every user. At the time of `placing an order`, every order will have a default `status: pending`. An admin will be able to `update the status` of the pending to `shipped status`. Also, it would be nice if you can `do one additional task` here: The admin will be able to `delete anyone's order` here. Make sure to `add a confirmation` before deleting. Please note: `delete is optional` but recommended on this page;
+7. On the `Manage All Orders` page the admin will see the orders placed by every user. At the time of `placing an order`, every order will have a default `status: pending`. An admin will be able to `update the status` of the pending to `shipped status`. Also, it would be nice if you can `do one additional task` here: The admin will be able to `delete anyone's order` here. Make sure to `add a confirmation` before deleting. Please note: `delete is optional` but recommended on this page; ✔
 
-8. On the `Manage Products` page, an admin `can delete` any of the `products`. Please make sure there is `a confirmation`. After delete that product will not appear on the `explore` page.
+8. On the `Manage Products` page, an admin `can delete` any of the `products`. Please make sure there is `a confirmation`. After delete that product will not appear on the `explore` page. ✔
 
 ### Optional:
 
@@ -88,7 +88,7 @@ Click Here: [Live Site (Netlify)]()
 2. On the `add a product` page, try to implement direct image `upload from your computer`. This image can be hosted on third part image hosting like imgbb or directly to mongodb
 3. Add a `shopping cart and Order review` page
 4. if you implement `pagination`, you can have duplicate products
-5. Implement `jwt` token.
+5. Implement `jwt` token. ✔
 6. Manage orders page, add `more options` like: `pending, rejected, shipped`. And consider using a select `(drop down options)`. Also, once the status of an item is updated that status is reflected on the `my orders` page once the user of the order is logged in.
 7. Try to use a `better looking confirmation dialogue` other than the browser's default confirm.
 8. Add some `animation` while applicable.

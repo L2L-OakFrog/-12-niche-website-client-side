@@ -5,7 +5,7 @@ const ProductCards = ({ product }) => {
     const { name, img, details } = product;
     return (
         <Col xs={12} md={6} lg={4} className='mb-2'>
-            <Card className='card'>
+            <Card className='cards'>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
