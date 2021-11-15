@@ -1,7 +1,29 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+.routes
+{
+  min-height: 100vh;
+  /* padding-bottom: 300px; */
+  text-align: center;
+}
+.footer
+{
+  font-family: 'Poppins', sans-serif;
+  margin-top: auto;
+  padding: 30px 0;
+  text-align: center;
+  background-color: rgb(209, 238, 238);
+}
+.footerBrand
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

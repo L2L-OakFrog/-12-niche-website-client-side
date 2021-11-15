@@ -1,0 +1,76 @@
+.hom
+{
+    
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    height: 450px;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    color: rgb(255, 252, 252);
+    background-image:url("https://cdn.videocardz.com/1/2019/05/Intel-Graphics-Card-Concept-Prometheus1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+.banner:hover
+{
+    color: black;
+    background-image:url("");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.flexing
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.card
+{
+    align-items: center;
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.card-text {
+    word-wrap: break-word;
+}
+.card img
+{
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 180px;
+    width: 50%;
+    
+}
+.card:hover
+{
+    transition: 0.8s;
+    background-color: rgb(185, 250, 250);
+    box-shadow: 4px 4px 7px gray;
+}
+.showing
+{
+    margin-left: 25%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.showinglogin
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.detailsgap
+{
+    margin-top: 50px;
+}
