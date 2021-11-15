@@ -73,7 +73,7 @@ const UserCart = () => {
                                 </TableCell>
                                 <TableCell align="right">${row.price}</TableCell>
                                 <TableCell align="right">{row.location ? `${row.location}` : 'Pending'}</TableCell>
-                                <TableCell align="right">{row.status ? `${row.status}` : <Box><NavLink to={`/dashboard/payment`}><Button sx={{ m: 1 }} variant="contained">Buy Now</Button></NavLink></Box>}</TableCell>
+                                <TableCell align="right">{row.status ? `${row.status}` : <Box><NavLink to={`/dashboard/payment`}><Button sx={{ m: 1 }} variant="contained">Payment Method</Button></NavLink></Box>}</TableCell>
                                 <TableCell align="right"><button onClick={() => deleteHandle(row._id)} className='ms-2'>X</button></TableCell>
                             </TableRow>
                         ))}

@@ -62,7 +62,8 @@ const Purchase = () => {
                 <form onSubmit={handleSubmit(onSubmitPurchase)}>
                     <input placeholder="Name" defaultValue={user.displayName} {...register("name", { required: true })} />
                     <input placeholder="Email" defaultValue={user.email} {...register("email", { required: true })} />
-                    <input placeholder="Bookings" defaultValue={ids?.name} {...register("productName")} />
+                    <input placeholder="Bookings" defaultValue={ids?.name} {...register("productName", { required: true })} />
+                    <input readOnly placeholder="Price" defaultValue={ids?.price} {...register("price", { required: true })} />
                     <input placeholder="Quantity" {...register("quantity", { required: true })} />
                     <input placeholder="Location" {...register("location", { required: true })} />
                     <input type="submit" value="Book Now" />
