@@ -1,14 +1,14 @@
-# Foundation Center
+# GPU Store
 
-This site is made for your foundation buying guide.
+This site is all about GPU's.
 
 ## `Services:`
 
 <ul>
-<li>You can choose from various foundations available in our website;</li>
-<li>Check every details of your chosen foundation & check out;</li>
+<li>You can choose from various gpu available in our website;</li>
+<li>Check every details of your chosen gpu & check out;</li>
 <li>Preview our customers feedbacks;</li>
-<li>Browse a whole collection of foundation brands;</li>
+<li>Browse a whole collection of Gpu brands;</li>
 <li>Create an account in our website to get future services and discounts if available.</li>
 </ul>
 
@@ -16,15 +16,15 @@ This site is made for your foundation buying guide.
 
 Click Here: [Live Site](https://assignment-12-niche-web.web.app/ "Firebase")
 <br />
-Click Here: [Live Site (Netlify)]()
+Click Here: [Live Site (Netlify)](https://friendly-jennings-e90b0e.netlify.app/)
 
 ## My Live Links:
 
 ### Live Site (Firebase): https://assignment-12-niche-web.web.app/
 
-### Live Site (Netlify): 
+### Live Site (Netlify): https://friendly-jennings-e90b0e.netlify.app/
 
-### Heroku (Server): 
+### Heroku (Server): https://serene-caverns-27431.herokuapp.com/
 
 ### GitHub (Client): https://github.com/programming-hero-web-course-4/niche-website-client-side-L2L-OakFrog
 
@@ -44,7 +44,7 @@ Click Here: [Live Site (Netlify)]()
 
 6. Another page on the top navigation bar named `explore` where users will see all the products. At least 10 products with `(name, description, image, price and button)`; ✔
 
-7. The `purchase` page is a private/protected route. Page should `display detailed information` of the `item`. Also `a form` should display the `user's name` and `email address` & users will `provide address, phone number and necessary information` to complete the purchase;
+7. The `purchase` page is a private/protected route. Page should `display detailed information` of the `item`. Also `a form` should display the `user's name` and `email address` & users will `provide address, phone number and necessary information` to complete the purchase; ✔
 
 8. The `private route` redirects to the `login page`. After login, the user will be `redirected to the page` where he/she wanted to go to. Also `reloading the page` of a private route, the user is not `redirected to the login page`; ✔
 
@@ -52,7 +52,7 @@ Click Here: [Live Site (Netlify)]()
 
 10. After login show in header `Dashboard` and inside a normal user will see options like `(pay, My Orders, Review, Logout)`. The `pay` page will say: Payment system coming soon; ✔
 
-11. `My orders` page, the logged in user will see only his/her orders with `cancel/delete any order`. `Ask a confirmation message` before deleting or canceling an item;
+11. `My orders` page, the logged in user will see only his/her orders with `cancel/delete any order`. `Ask a confirmation message` before deleting or canceling an item; ✔
 
 12. On the `Review` page, users should be able to add a review and that review will appear on the home age; ✔
 
@@ -91,15 +91,15 @@ Click Here: [Live Site (Netlify)]()
 5. Implement `jwt` token. ✔
 6. Manage orders page, add `more options` like: `pending, rejected, shipped`. And consider using a select `(drop down options)`. Also, once the status of an item is updated that status is reflected on the `my orders` page once the user of the order is logged in.
 7. Try to use a `better looking confirmation dialogue` other than the browser's default confirm.
-8. Add some `animation` while applicable.
-9. Please Use `icons` whenever applicable and use `fonts` (google fonts)
-10. Make the `footer` little more `realistic`
-11. `Optimize your images`
-12. Add `something extra` of your own. This will help you in the future.
-13. Most of the `booking` will have a `date`, you can use browsers default input type date or any external packages
-14. We encourage you to `use axios`.
+8. Add some `animation` while applicable. ✔
+9. Please Use `icons` whenever applicable and use `fonts` (google fonts) ✔
+10. Make the `footer` little more `realistic` ✔
+11. `Optimize your images` ✔
+12. Add `something extra` of your own. This will help you in the future. ✔
+13. Most of the `booking` will have a `date`, you can use browsers default input type date or any external packages ✔
+14. We encourage you to `use axios`. ✔
 15. Also, if you want you can `use mongoose`.
-16. If possible, replace the default react favicon and `give an icon` for your website.
+16. If possible, replace the default react favicon and `give an icon` for your website. ✔
 
 ### Additional information:
 
