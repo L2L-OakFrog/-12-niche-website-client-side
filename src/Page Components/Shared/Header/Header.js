@@ -9,7 +9,7 @@ import headerImg from '../../../Attachments/Header.png'
 const Header = () => {
     const { user, logout } = useAuth();
     return (
-        <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container className="header">
                 {/* Logo & Name */}
                 <Navbar.Brand as={Link} to="/">

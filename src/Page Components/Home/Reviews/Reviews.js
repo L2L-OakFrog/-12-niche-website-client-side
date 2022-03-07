@@ -2,6 +2,7 @@ import React from 'react';
 import useReviews from '../../../Hooks/UseReviews';
 import { Container, Row } from 'react-bootstrap';
 import SingleReview from './SingleReview/SingleReview';
+import sliderReview from './sliderReview';
 
 const Reviews = () => {
     const [reviews] = useReviews();
@@ -17,6 +18,7 @@ const Reviews = () => {
                         ></SingleReview>)
                 }
             </Row>
+            <sliderReview></sliderReview>
         </Container>
     );
 };
