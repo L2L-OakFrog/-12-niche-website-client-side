@@ -14,11 +14,11 @@ const ManageUsers = () => {
 
     const [allOrders, setAllOrders] = useState([]);
     /* useEffect(() => {
-        fetch(`https://serene-caverns-27431.herokuapp.com/orders?email=${user.email}`)
+        fetch(`https://one2-niche-website-server-side.onrender.com/orders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setCart(data))
     }, []) */
-    axios.get(`https://serene-caverns-27431.herokuapp.com/user`)
+    axios.get(`https://one2-niche-website-server-side.onrender.com/user`)
         .then(res => {
             const data = res.data;
             setAllOrders(data);
@@ -27,7 +27,7 @@ const ManageUsers = () => {
 
         const sure = window.confirm('Are you Sure?');
         if (sure) {
-            axios.delete(`https://serene-caverns-27431.herokuapp.com/user/${data}`)
+            axios.delete(`https://one2-niche-website-server-side.onrender.com/user/${data}`)
                 .then(res => {
                     const data = res.data;
                     if (data.deletedCount > 0) {

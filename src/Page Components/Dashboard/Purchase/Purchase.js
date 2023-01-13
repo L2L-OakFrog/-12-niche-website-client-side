@@ -13,7 +13,7 @@ const Purchase = () => {
     const { register, reset, handleSubmit } = useForm();
     const [ids, setIds] = useState({});
     useEffect(() => {
-        axios.get(`https://serene-caverns-27431.herokuapp.com/explore/${pId}`)
+        axios.get(`https://one2-niche-website-server-side.onrender.com/explore/${pId}`)
             .then(res => {
                 const data = res.data;
                 console.log(data);
@@ -22,7 +22,7 @@ const Purchase = () => {
     }, [])
 
     const onSubmitPurchase = data => {
-        axios.post('https://serene-caverns-27431.herokuapp.com/orders', data)
+        axios.post('https://one2-niche-website-server-side.onrender.com/orders', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {
@@ -32,7 +32,7 @@ const Purchase = () => {
             })
     }
     return (
-        <div className='container'>
+        <div className='container' style={{ backgroundColor: 'whitesmoke' }}>
             <h1>Showing Details of: {ids?.name}</h1>
             <hr />
             <Container className='flexing'>
@@ -66,7 +66,7 @@ const Purchase = () => {
                     <input readOnly placeholder="Price" defaultValue={ids?.price} {...register("price", { required: true })} />
                     <input placeholder="Quantity" {...register("quantity", { required: true })} />
                     <input placeholder="Location" {...register("location", { required: true })} />
-                    <input type="submit" value="Book Now" />
+                    <input type="submit" value="Buy Now" />
                 </form>
             </div>
         </div>

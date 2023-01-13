@@ -29,13 +29,13 @@ const Login = () => {
     }
 
     return (
-        <Container>
+        <Container style={{ backgroundColor: 'white' }}>
             <Typography
                 sx={{ mt: 8 }}
                 variant='h3'
                 gutterBottom
-            >Login with your credentials</Typography>
-            <hr />
+            ></Typography>
+
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                     <Typography variant='h4' gutterBottom>Login</Typography>
@@ -61,10 +61,11 @@ const Login = () => {
                             variant="standard"
                         />
                         <Button
-                            sx={{ width: '75%', m: 1 }}
+                            sx={{ width: '25%', m: 1 }}
+                            style={{ borderRadius: '20px', marginLeft: '25%' }}
                             variant="contained"
                             type="submit"
-                        >Submit</Button>
+                        >Log In</Button>
                         <NavLink
                             to='/register'
                             style={{ textDecoration: 'none' }}

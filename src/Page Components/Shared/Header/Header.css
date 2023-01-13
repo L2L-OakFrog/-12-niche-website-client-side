@@ -4,4 +4,9 @@
     font-weight: 500;
     color: white;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+.inside-div
+{
+    display: flex;
 }

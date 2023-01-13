@@ -40,11 +40,11 @@ const Home = () => {
             <br />
             <Container>
                 <div style={{ color: 'white' }}>
-                    <h4>Testimonials</h4>
+                    <h4 style={{ textAlign: 'center' }}>Testimonials</h4>
                     <hr style={{ width: '25%', marginLeft: '37.5%', marginRight: '37.5%' }} />
                 </div>
                 <Reviews />
-                <sliderReview></sliderReview>
+                {/* <sliderReview></sliderReview> */}
             </Container>
             <Container>
                 <div>

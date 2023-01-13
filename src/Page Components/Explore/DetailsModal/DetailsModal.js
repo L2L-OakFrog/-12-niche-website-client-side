@@ -30,7 +30,7 @@ const DetailsModal = ({ openModal, handleCloseDetails, product }) => {
             productName: name,
             price: price,
         }
-        axios.post('https://serene-caverns-27431.herokuapp.com/orders', orders)
+        axios.post('https://one2-niche-website-server-side.onrender.com/orders', orders)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!');

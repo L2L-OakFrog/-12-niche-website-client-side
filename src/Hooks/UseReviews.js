@@ -4,7 +4,7 @@ import axios from 'axios';
 const useReviews = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        axios.get('https://serene-caverns-27431.herokuapp.com/review')
+        axios.get('https://one2-niche-website-server-side.onrender.com/review')
             .then(res => {
                 const data = res.data;
                 setReviews(data);

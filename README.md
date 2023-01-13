@@ -24,7 +24,7 @@ Click Here: [Live Site (Netlify)](https://friendly-jennings-e90b0e.netlify.app/)
 
 ### Live Site (Netlify): https://friendly-jennings-e90b0e.netlify.app/
 
-### Heroku (Server): https://serene-caverns-27431.herokuapp.com/
+### Heroku (Server): https://one2-niche-website-server-side.onrender.com/
 
 ### GitHub (Client): https://github.com/programming-hero-web-course-4/niche-website-client-side-L2L-OakFrog
 

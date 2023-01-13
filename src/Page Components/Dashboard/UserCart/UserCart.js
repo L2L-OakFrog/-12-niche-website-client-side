@@ -18,7 +18,7 @@ const UserCart = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://serene-caverns-27431.herokuapp.com/orders?email=${user.email}`)
+        axios.get(`https://one2-niche-website-server-side.onrender.com/orders?email=${user.email}`)
             .then(res => {
                 const data = res.data;
                 setCart(data);
@@ -29,7 +29,7 @@ const UserCart = () => {
 
         const sure = window.confirm('Are you Sure?');
         if (sure) {
-            axios.delete(`https://serene-caverns-27431.herokuapp.com/orders/${data}`)
+            axios.delete(`https://one2-niche-website-server-side.onrender.com/orders/${data}`)
                 .then(res => {
                     const data = res.data;
                     console.log(data);
@@ -37,7 +37,7 @@ const UserCart = () => {
                         alert('deleted');
                         /* const remainingCart = cart.filter(order => order._id !== data);
                         setCart(remainingCart); */
-                        axios.get(`https://serene-caverns-27431.herokuapp.com/orders?email=${user.email}`)
+                        axios.get(`https://one2-niche-website-server-side.onrender.com/orders?email=${user.email}`)
                             .then(res => {
                                 const data = res.data;
                                 setCart(data);

@@ -7,7 +7,7 @@ const AddProducts = () => {
     const { register, formState: { errors }, reset, handleSubmit } = useForm();
 
     const onSubmitProducts = data => {
-        axios.post('https://serene-caverns-27431.herokuapp.com/explore', data)
+        axios.post('https://one2-niche-website-server-side.onrender.com/explore', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!');

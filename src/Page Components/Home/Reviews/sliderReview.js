@@ -1,42 +1,49 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+// import React from 'react';
+// import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-export default class AutoPlay extends Component {
-    render() {
-        const settings = {
-            dots: true,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            speed: 2000,
-            autoplaySpeed: 2000,
-            cssEase: "linear"
-        };
-        return (
-            <div>
-                <h2>Auto Play</h2>
-                <Slider {...settings}>
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
-                </Slider>
-            </div>
-        );
-    }
-}
+// const sliderReview = () => {
+//     return (
+//         <OwlCarousel className='owl-theme' loop margin={10} nav>
+//             <div class='item'>
+//                 <h4>1</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>2</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>3</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>4</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>5</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>6</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>7</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>8</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>9</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>10</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>11</h4>
+//             </div>
+//             <div class='item'>
+//                 <h4>12</h4>
+//             </div>
+//         </OwlCarousel>
+//     );
+// };
+
+// export default sliderReview;

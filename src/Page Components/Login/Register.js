@@ -29,13 +29,13 @@ const Register = () => {
         e.preventDefault();
     }
     return (
-        <Container>
+        <Container style={{ backgroundColor: 'white' }}>
             <Typography
                 sx={{ mt: 8 }}
                 variant='h3'
                 gutterBottom
-            >Create an account</Typography>
-            <hr />
+            ></Typography>
+
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                     <Typography variant='h4' gutterBottom>Register</Typography>
